@@ -6,12 +6,13 @@
 Summary:	DSO module for the apache web server
 Name:		apache-%{mod_name}
 Version:	0
-Release:	%mkrel 6
+Release:	%mkrel 7
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.heute-morgen.de/modules/mod_xml2/
 Source0:	%{mod_name}.tar.gz
 Source1:	%{mod_conf}
+Patch0:		mod_xml2-format_not_a_string_literal_and_no_format_arguments.diff
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires(pre):	apache-conf >= 2.2.0
@@ -60,6 +61,7 @@ This package contains the development API for the mod_xml2 apache module.
 %prep
 
 %setup -q -n %{mod_name}
+%patch0 -p0
 
 cp %{SOURCE1} %{mod_conf}
 
