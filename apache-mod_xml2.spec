@@ -6,7 +6,7 @@
 Summary:	DSO module for the apache web server
 Name:		apache-%{mod_name}
 Version:	0
-Release:	%mkrel 10
+Release:	%mkrel 11
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.heute-morgen.de/modules/mod_xml2/
