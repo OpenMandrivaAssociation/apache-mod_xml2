@@ -9,7 +9,7 @@ Version:	0
 Release:	%mkrel 11
 Group:		System/Servers
 License:	Apache License
-URL:		http://www.heute-morgen.de/modules/mod_xml2/
+URL:		https://www.heute-morgen.de/modules/mod_xml2/
 Source0:	%{mod_name}.tar.gz
 Source1:	%{mod_conf}
 Patch0:		mod_xml2-format_not_a_string_literal_and_no_format_arguments.diff
